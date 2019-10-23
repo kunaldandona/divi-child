@@ -21,6 +21,6 @@ get_header( 'shop' );
 
 <?php
 woocommerce_category_image();
-// echo showmodule_shortcode(83);
+echo showmodule_shortcode(83);
 get_footer( 'shop' );
 
