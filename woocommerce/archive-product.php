@@ -11,6 +11,7 @@ get_header( 'shop' );
     </div>
 	<div class="bottom-divider"></div>
 </div>
+<div class="row-archive">
 
 
 <?php
@@ -60,6 +61,9 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
+?>
+</div>
+<?php
 echo showmodule_shortcode(83);
 get_footer( 'shop' );
 

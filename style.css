@@ -45,3 +45,8 @@
 .archive-page-header .row h1 {
     color: #fff;
 }
+
+.row-archive {
+    max-width: 1280px;
+    margin: 0 auto;
+}
