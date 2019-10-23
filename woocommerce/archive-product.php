@@ -4,20 +4,12 @@ get_header( 'shop' );
 
 ?>
 
-<div class="et_pb_section et_pb_section_1 et_pb_with_background et_pb_inner_shadow et_section_regular section_has_divider et_pb_bottom_divider">
-    <div class="et_pb_row et_pb_row_0">
-        <div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
-            <div class="et_pb_module et_pb_image et_pb_image_0">
-			    <span class="et_pb_image_wrap ">
-                    <?php woocommerce_category_image(); ?>
-                </span>
-                </div>
-            <div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light  et_pb_text_align_center">
-				<div class="et_pb_text_inner"><h1><?php woocommerce_page_title(); ?></h1></div>
-			</div> <!-- .et_pb_text -->
-		</div> <!-- .et_pb_column -->	
-	</div> <!-- .et_pb_row -->
-	<div class="et_pb_bottom_inside_divider"></div>
+<div class="archive-page-header">
+    <div class="row">
+        <?php woocommerce_category_image(); ?>
+        <h1><?php woocommerce_page_title(); ?></h1>
+    </div>
+	<div class="bottom-divider"></div>
 </div>
 
 
