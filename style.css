@@ -34,4 +34,14 @@
 .archive-page-header img {
     max-width: 100px;
     height: auto;
+    padding: 20px 0;
+}
+
+.archive-page-header .row {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.archive-page-header .row h1 {
+    color: #fff;
 }
