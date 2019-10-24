@@ -25,3 +25,9 @@ function woocommerce_category_image() {
 		}
 	}
 }
+
+// Using Custom JS File
+function my_theme_scripts() {
+    wp_enqueue_script( 'mainJS', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
