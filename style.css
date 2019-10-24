@@ -50,3 +50,16 @@
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.sub-menu-flexxi {
+    position: fixed;
+    width: 100%;
+    background-color: #fdb633;
+    height: 60px;
+    z-index: 1;
+}
+
+.flexxi-main-menu {
+    position: fixed;
+    width: 100%;
+}
