@@ -65,6 +65,6 @@
     z-index: 1;
 }
 
-#main-flexxi-submenu {
+.display-none {
     display: none;
 }
