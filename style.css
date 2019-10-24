@@ -63,3 +63,7 @@
     position: fixed;
     width: 100%;
 }
+
+.main-flexxi-submenu {
+    display: none;
+}

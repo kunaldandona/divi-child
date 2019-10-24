@@ -1,7 +1,8 @@
 jQuery(document).ready(function ($) {
 
-    console.log('working fine');
-    let home = $('.home');
-    console.log(home);
+    $('#flexxi-logo').click((e) => {
+        e.preventDefault();
+        $('.main-flexxi-submenu').css("display", "block");
+    })
 
 });
