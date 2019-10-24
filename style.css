@@ -57,9 +57,8 @@
     z-index: 1;
 }
 
-#main-flexxi-submenu {
-    opacity: 1;
-    transition: all 1s ease-in;
+#main-flexxi-submenu:hover {
+    cursor: pointer;
 }
 
 .display-none {
