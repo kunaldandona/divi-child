@@ -18,7 +18,7 @@ $id = get_option( 'woocommerce_shop_page_id' );
 the_field('top_image_banner_sub_pages', $id);
 echo 'hey';
 ?>
-<h2><?php echo $id; ?></h2>
+<h2><?php echo the_field('text-category', 19); ?></h2>
 
 <img src="<?php echo the_field('background-hero', 19); ?>" />
 
