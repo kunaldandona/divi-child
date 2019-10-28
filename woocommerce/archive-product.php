@@ -14,11 +14,10 @@ get_header( 'shop' );
 <div class="row-archive">
 
 <?php
-$cate = get_queried_object();
-$cateID = $cate->term_id;
-echo $cateID;
+$term = get_queried_object();
+$termID = $term->term_id;
 ?>
-<h2><?php echo the_field('text-category', 19); ?></h2>
+<h2><?php echo $termID; ?></h2>
 
 <img src="<?php echo the_field('background-hero', 19); ?>" />
 
