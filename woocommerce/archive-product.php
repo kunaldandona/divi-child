@@ -19,7 +19,7 @@ $postid = $wp_query->post->ID;
 echo get_post_meta($postid, 'text-category', true);
 ?>
 
-<h2><?php the_field('text-category'); ?></h2>
+<h2>Category: <?php the_field('text-category'); ?></h2>
 
 <?php
 if ( woocommerce_product_loop() ) {
