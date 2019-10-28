@@ -16,9 +16,10 @@ get_header( 'shop' );
 <?php
 $term = get_queried_object();
 $termID = $term->term_id;
-$categorybanner      = get_field('background-hero', $termID);
+$post_id = 'product_cat_'.$termID;
+$categorybanner = get_field('background-hero', $post_id);
 ?>
-<h2><?php echo get_post_field("text_category", 19); ?></h2>
+<h2><?php echo get_field("text_category", $post_id); ?></h2>
 
 <img src="<?php echo $categorybanner ?>" />
 
