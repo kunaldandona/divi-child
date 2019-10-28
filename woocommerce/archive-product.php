@@ -18,14 +18,12 @@ $term = get_queried_object();
 $termID = $term->term_id;
 $categorybanner      = get_field('background-hero', $termID);
 ?>
-<h2><?php echo get_field('text-category', 19); ?></h2>
+<h2><?php echo get_field("text_category", 19); ?></h2>
 
 <img src="<?php echo $categorybanner ?>" />
 
 <?php
 if ( woocommerce_product_loop() ) {
-	$value = get_field( "text-category", 19 );
-	echo $value;
 	do_action( 'woocommerce_before_shop_loop' );
 	woocommerce_product_loop_start();
 	if ( wc_get_loop_prop( 'total' ) ) {
