@@ -16,10 +16,11 @@ get_header( 'shop' );
 <?php
 $term = get_queried_object();
 $termID = $term->term_id;
+$categorybanner      = get_field('background-hero', $termID);
 ?>
-<h2><?php get_field('text-category', 19); ?></h2>
+<h2><?php echo get_field('text-category', 19); ?></h2>
 
-<img src="<?php echo get_field('background-hero', 19); ?>" />
+<img src="<?php echo $categorybanner ?>" />
 
 <?php
 if ( woocommerce_product_loop() ) {
