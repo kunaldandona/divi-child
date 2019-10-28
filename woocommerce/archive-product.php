@@ -22,6 +22,7 @@ $image = get_field('background-hero', $term);
 
 
 ?>
+<h2><?php $term = get_term( $term_id, $taxonomy ); ?></h2>
 
 <img src="<?php echo $image['url']; ?>" />
 
