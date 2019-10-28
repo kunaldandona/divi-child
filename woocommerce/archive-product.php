@@ -18,10 +18,12 @@ global $wp_query;
 $postid = $wp_query->post->ID;
 echo get_post_meta($postid, 'text-category', true);
 $term = get_queried_object();
-echo $term;
+$image = get_field('background-hero', $term);
+
+
 ?>
 
-<h2>Category: <?php the_field('text-category'); ?></h2>
+<img src="<?php echo $image['url']; ?>" />
 
 <?php
 if ( woocommerce_product_loop() ) {
