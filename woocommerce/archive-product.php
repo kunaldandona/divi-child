@@ -13,6 +13,12 @@ get_header( 'shop' );
 </div>
 <div class="row-archive">
 
+<?php
+global $wp_query;
+$postid = $wp_query->post->ID;
+echo get_post_meta($postid, 'background-hero-image', true);
+wp_reset_query();
+?>
 
 <?php
 if ( woocommerce_product_loop() ) {
