@@ -14,17 +14,13 @@ get_header( 'shop' );
 <div class="row-archive">
 
 <?php
-global $wp_query;
-$postid = $wp_query->post->ID;
-echo get_post_meta($postid, 'text-category', true);
-$term = get_queried_object();
-$image = get_field('background-hero', $term);
+$id = get_option( 'woocommerce_shop_page_id' );
 
 
 ?>
-<h2><?php $term = get_term( $term_id, $taxonomy ); ?></h2>
+<h2><?php echo $id; ?></h2>
 
-<img src="<?php echo $image['url']; ?>" />
+<img src="<?php echo the_field('top_image_banner_sub_pages', $id); ?>" />
 
 <?php
 if ( woocommerce_product_loop() ) {
