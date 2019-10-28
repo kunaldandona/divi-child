@@ -17,6 +17,8 @@ get_header( 'shop' );
 global $wp_query;
 $postid = $wp_query->post->ID;
 echo get_post_meta($postid, 'text-category', true);
+$term = get_queried_object();
+echo $term;
 ?>
 
 <h2>Category: <?php the_field('text-category'); ?></h2>
