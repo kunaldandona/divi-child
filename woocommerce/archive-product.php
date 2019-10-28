@@ -19,7 +19,7 @@ $termID = $term->term_id;
 ?>
 <h2><?php echo $termID; ?></h2>
 
-<img src="<?php echo the_field('background-hero', 19); ?>" />
+<img src="<?php echo get_field('background-hero', 19); ?>" />
 
 <?php
 if ( woocommerce_product_loop() ) {
