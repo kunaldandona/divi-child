@@ -17,6 +17,7 @@ get_header( 'shop' );
 global $wp_query;
 $postid = $wp_query->post->ID;
 echo get_post_meta($postid, 'background-hero-image', true);
+echo 'hey';
 wp_reset_query();
 ?>
 
