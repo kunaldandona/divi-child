@@ -18,7 +18,7 @@ $term = get_queried_object();
 $termID = $term->term_id;
 $categorybanner      = get_field('background-hero', $termID);
 ?>
-<h2><?php echo get_field("text_category", 19); ?></h2>
+<h2><?php echo get_post_field("text_category", 19); ?></h2>
 
 <img src="<?php echo $categorybanner ?>" />
 
