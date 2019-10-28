@@ -15,7 +15,7 @@ get_header( 'shop' );
 
 <?php
 $id = get_option( 'woocommerce_shop_page_id' );
-echo $id;
+the_field('top_image_banner_sub_pages', $id);
 
 ?>
 <h2><?php echo $id; ?></h2>
