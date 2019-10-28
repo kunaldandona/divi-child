@@ -17,8 +17,6 @@ get_header( 'shop' );
 global $wp_query;
 $postid = $wp_query->post->ID;
 echo get_post_meta($postid, 'background-hero-image', true);
-echo 'hey';
-wp_reset_query();
 ?>
 
 <?php
@@ -38,7 +36,6 @@ if ( woocommerce_product_loop() ) {
 			/**
 			 * Hook: woocommerce_shop_loop.
 			 */
-			?><img src="<?php the_field('hero_image'); ?>" /><?php
 			do_action( 'woocommerce_shop_loop' );
 			wc_get_template_part( 'content', 'product' );
 		}
