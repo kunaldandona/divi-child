@@ -17,7 +17,7 @@ get_header( 'shop' );
 $term = get_queried_object();
 $termID = $term->term_id;
 ?>
-<h2><?php echo $termID; ?></h2>
+<h2><?php get_field('text-category', 19); ?></h2>
 
 <img src="<?php echo get_field('background-hero', 19); ?>" />
 
