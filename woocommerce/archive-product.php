@@ -6,7 +6,7 @@ $term = get_queried_object();
 $termID = $term->term_id;
 $post_id = 'product_cat_'.$termID;
 $categorybanner = get_field('background-hero', $post_id);
-
+$text = get_field("text_category", $post_id);
 
 ?>
 
@@ -71,8 +71,6 @@ do_action( 'woocommerce_after_main_content' );
 		<?php woocommerce_taxonomy_archive_description(); ?>
 	</div>
 </div>
-
-<h2><?php echo get_field("text_category", $post_id); ?></h2>
 <?php
 
 echo showmodule_shortcode(83);
