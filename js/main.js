@@ -5,8 +5,7 @@ jQuery(document).ready(function ($) {
         $('#main-flexxi-submenu').toggleClass("display-none", 1000);
     });
 
-    let colors = ["#A773FF", "#7568E8", "#689FE8", "#73D4FF"];
-    console.log(colors);
+    let colors = ['#d90368', '#ec368d', '#ee4266', '#820263'];
 
     colorChange = () => {
         colors.push(colors.shift());
