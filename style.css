@@ -85,3 +85,22 @@ body {
     color: white;
     font-weight: 700;
 }
+
+
+.woocommerce-result-count {
+    background-color: #fdb833;
+    padding: 10px;
+    color: white;
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+    border-radius: 10px;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+.archive .products {
+    margin: 20px 0;
+}
