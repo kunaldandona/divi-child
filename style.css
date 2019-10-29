@@ -32,6 +32,8 @@ body {
     position: relative;
     background-color: #6e2799;
     padding-top: 70px;
+    transition: all 0.4s ease-in-out;
+    top: 0;
 }
 
 .archive-page-header img {
