@@ -79,6 +79,7 @@ body {
     font-style: italic;
     padding: 30px;
     border-radius: 30px;
+    margin-top: 30px;
 }
 
 .cat-description h1 {
@@ -118,4 +119,6 @@ body {
     background-color: transparent;
     padding: 20px;
     transition: all 1s ease-out;
+    color: #fff;
+    font-size: 16px;
 }
