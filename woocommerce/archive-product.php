@@ -67,7 +67,7 @@ do_action( 'woocommerce_after_main_content' );
 ?>
 <div class="row-archive">
 	<div class="cat-description">
-		<?php woocommerce_page_title(); ?>
+		<h1><?php woocommerce_page_title(); ?></h1>
 		<?php woocommerce_taxonomy_archive_description(); ?>
 	</div>
 </div>
