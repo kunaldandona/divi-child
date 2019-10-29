@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
     colorChange = () => {
         colors.push(colors.shift());
         for (let i = 0; i < colors.length; i++) {
-            $(".container div:nth-child(" + (i + 1) + ")").css(
+            $(".archive .container div:nth-child(" + (i + 1) + ")").css(
                 "background-color",
                 colors[i]
             );
