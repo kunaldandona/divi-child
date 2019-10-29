@@ -68,6 +68,7 @@ do_action( 'woocommerce_after_main_content' );
 </div>
 <h2><?php echo get_field("text_category", $post_id); ?></h2>
 <div class="description"><?php echo $term->description; ?></div>
+<?php woocommerce_taxonomy_archive_description(); ?>
 <?php
 
 echo showmodule_shortcode(83);
