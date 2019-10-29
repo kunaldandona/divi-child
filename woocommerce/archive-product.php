@@ -67,7 +67,7 @@ do_action( 'woocommerce_after_main_content' );
 ?>
 </div>
 <h2><?php echo get_field("text_category", $post_id); ?></h2>
-<div class="description"><?php echo $term_object->description; ?></div>
+<div class="description"><?php echo $term->description; ?></div>
 <?php
 
 echo showmodule_shortcode(83);
