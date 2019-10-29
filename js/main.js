@@ -6,6 +6,7 @@ jQuery(document).ready(function ($) {
     });
 
     let colors = ["#A773FF", "#7568E8", "#689FE8", "#73D4FF"];
+    console.log(colors);
 
     colorChange = () => {
         colors.push(colors.shift());
