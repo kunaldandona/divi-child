@@ -2,6 +2,12 @@
 defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 
+$term = get_queried_object();
+$termID = $term->term_id;
+$post_id = 'product_cat_'.$termID;
+$categorybanner = get_field('background-hero', $post_id);
+
+
 ?>
 
 <div class="archive-page-header">
@@ -12,16 +18,11 @@ get_header( 'shop' );
 	<div class="bottom-divider"></div>
 </div>
 <div class="row-archive">
+	<div class="hero-banner">
+		<img src="<?php echo $categorybanner ?>" alt="<?php woocommerce_page_title(); ?>"/>
+	</div>
 
-<?php
-$term = get_queried_object();
-$termID = $term->term_id;
-$post_id = 'product_cat_'.$termID;
-$categorybanner = get_field('background-hero', $post_id);
-?>
-<h2><?php echo get_field("text_category", $post_id); ?></h2>
 
-<img src="<?php echo $categorybanner ?>" />
 
 <?php
 if ( woocommerce_product_loop() ) {
@@ -65,7 +66,10 @@ do_action( 'woocommerce_after_main_content' );
  */
 ?>
 </div>
+<h2><?php echo get_field("text_category", $post_id); ?></h2>
+<div class="description"><?php echo $term_object->description; ?></div>
 <?php
+
 echo showmodule_shortcode(83);
 get_footer( 'shop' );
 
