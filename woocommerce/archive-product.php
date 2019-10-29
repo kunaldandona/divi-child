@@ -73,6 +73,6 @@ do_action( 'woocommerce_after_main_content' );
 </div>
 <?php
 
-echo showmodule_shortcode(83);
+echo showmodule_shortcode(5502);
 get_footer( 'shop' );
 
