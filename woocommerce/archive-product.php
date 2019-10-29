@@ -65,10 +65,14 @@ do_action( 'woocommerce_after_main_content' );
  * @hooked woocommerce_get_sidebar - 10
  */
 ?>
+<div class="row-archive">
+	<div class="cat-description">
+		<?php woocommerce_page_title(); ?>
+		<?php woocommerce_taxonomy_archive_description(); ?>
+	</div>
 </div>
-<h2><?php echo get_field("text_category", $post_id); ?></h2>
-<div class="description"><?php woocommerce_taxonomy_archive_description(); ?></div>
 
+<h2><?php echo get_field("text_category", $post_id); ?></h2>
 <?php
 
 echo showmodule_shortcode(83);

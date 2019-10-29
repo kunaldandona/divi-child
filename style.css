@@ -64,3 +64,19 @@
 .display-none {
     display: none;
 }
+
+.hero-banner {
+    margin: 30px 0;
+}
+
+.cat-description {
+    font-size: 16px;
+    background-color: #FDB833;
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.cat-description .brand-name {}
