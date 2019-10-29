@@ -51,6 +51,7 @@ jQuery(document).ready(function ($) {
         if (st > lastScrollTop && st > navbarHeight) {
             // Scroll Down
             $('header').addClass('nav-up');
+            $('#main-flexxi-submenu').addClass("display-none");
         } else {
             // Scroll Up
             if (st + $(window).height() < $(document).height()) {
