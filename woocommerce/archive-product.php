@@ -32,9 +32,6 @@ if($description or $descriptionPagination){
 </div>
 <div class="row-archive">
 <?php echo $heroBanner ?>
-
-
-
 <?php
 if ( woocommerce_product_loop() ) {
 	do_action( 'woocommerce_before_shop_loop' );
@@ -75,7 +72,8 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-
+?>
+<?php
 echo $footerWidget;
 echo showmodule_shortcode(5566);
 get_footer( 'shop' );
