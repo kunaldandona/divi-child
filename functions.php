@@ -51,6 +51,17 @@ function flexxi_woocommerce_taxonomy_archive_description() {
 }
 add_action( 'woocommerce_archive_description', 'flexxi_woocommerce_taxonomy_archive_description');
 
+/* Display WooCommerce product category description on all category archive pages */
+function check_woo_description() {
+    if ( is_tax( array( 'product_cat', 'product_tag' ) ) ) {
+        $description = wc_format_content( term_description() );
+        if ( $description ) {
+            return true;
+        }
+    }
+}
+add_action( 'woocommerce_archive_description', 'check_woo_description');
+
 /**
  * Hide category product count in product archives
  */
