@@ -144,4 +144,32 @@ body {
 .nav-up {
   top: -70px;
 }
+
+.et-main-area {
+  margin-top: 70px;
+}
+
+.bg-animation:hover {
+  border: 6px solid transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#97dffc), color-stop(50%, #00bea3), to(#97dffc));
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #97dffc, #00bea3 50%, #97dffc);
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100% 200%;
+  background-position: 0 0, 0 100%;
+  background-origin: padding-box, border-box;
+  -webkit-animation: highlight 1s infinite alternate;
+          animation: highlight 1s infinite alternate;
+}
+
+@-webkit-keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
+@keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
