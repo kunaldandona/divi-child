@@ -14,14 +14,6 @@ if($categorybanner){
 	$heroBanner = '<div class="hero-banner"><img src="'. $categorybanner .'" alt="'. woocommerce_page_title() .'" /></div>';
 }
 
-$pageTitle =  woocommerce_page_title();
-$description = woocommerce_taxonomy_archive_description();
-$descriptionPagination = flexxi_woocommerce_taxonomy_archive_description();
-
-if($description || $descriptionPagination){
-	$footerWidget = '<h1>'.woocommerce_page_title().'</h1>'.woocommerce_taxonomy_archive_description(); flexxi_woocommerce_taxonomy_archive_description().'';
-}
-
 ?>
 
 <div class="archive-page-header">
@@ -77,9 +69,10 @@ do_action( 'woocommerce_after_main_content' );
 <?php
 echo '<div class="row-archive"><div class="cat-description"><h1>';
 echo woocommerce_page_title();
+echo '</h1>';
 echo woocommerce_taxonomy_archive_description(); 
 echo flexxi_woocommerce_taxonomy_archive_description();
-echo '</h1></div></div>';
+echo '</div></div>';
 ?>
 <?php
 
