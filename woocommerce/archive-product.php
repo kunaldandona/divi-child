@@ -5,11 +5,20 @@ get_header( 'shop' );
 $term = get_queried_object();
 $termID = $term->term_id;
 $post_id = 'product_cat_'.$termID;
-$categorybanner = get_field('background-hero', $post_id);
+
+// Custom Field Text
 $text = get_field("text_category", $post_id);
 
+$categorybanner = get_field('background-hero', $post_id);
 if($categorybanner){
 	$heroBanner = '<div class="hero-banner"><img src="'. $categorybanner .'" alt="'. woocommerce_page_title() .'" /></div>';
+}
+
+$description = woocommerce_taxonomy_archive_description();
+$descriptionPagination = flexxi_woocommerce_taxonomy_archive_description();
+
+if($description or $descriptionPagination){
+	$footerWidget = '<div class="row-archive"><div class="cat-description">Test<h1>'.woocommerce_page_title().'</h1>'.woocommerce_taxonomy_archive_description(); flexxi_woocommerce_taxonomy_archive_description().'</div></div>';
 }
 
 ?>
@@ -22,7 +31,7 @@ if($categorybanner){
 	<div class="bottom-divider"></div>
 </div>
 <div class="row-archive">
-	<?php echo $heroBanner ?>
+<?php echo $heroBanner ?>
 
 
 
@@ -66,16 +75,8 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-?>
-<div class="row-archive">
-	<div class="cat-description">
-		<h1><?php woocommerce_page_title(); ?></h1>
-		<?php woocommerce_taxonomy_archive_description(); ?>
-		<?php flexxi_woocommerce_taxonomy_archive_description(); ?>
-	</div>
-</div>
-<?php
 
+echo $footerWidget;
 echo showmodule_shortcode(5566);
 get_footer( 'shop' );
 
