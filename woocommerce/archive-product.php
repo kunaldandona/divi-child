@@ -75,12 +75,11 @@ do_action( 'woocommerce_after_main_content' );
  */
 ?>
 <?php
-echo '<div class="row-archive">';
-echo '<div class="cat-description">';
-echo '<h1>';
+echo '<div class="row-archive"><div class="cat-description"><h1>';
 echo woocommerce_page_title();
-echo '</h1>';
-echo '</div></div>';
+echo woocommerce_taxonomy_archive_description(); 
+echo flexxi_woocommerce_taxonomy_archive_description();
+echo '</h1></div></div>';
 ?>
 <?php
 
