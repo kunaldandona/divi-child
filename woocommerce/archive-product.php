@@ -67,12 +67,14 @@ do_action( 'woocommerce_after_main_content' );
  */
 ?>
 <?php
-echo '<div class="row-archive"><div class="cat-description"><h1>';
-echo woocommerce_page_title();
-echo '</h1>';
-echo woocommerce_taxonomy_archive_description(); 
-echo flexxi_woocommerce_taxonomy_archive_description();
-echo '</div></div>';
+	if(woocommerce_taxonomy_archive_description()){
+		echo '<div class="row-archive"><div class="cat-description"><h1>';
+		echo woocommerce_page_title();
+		echo '</h1>';
+		echo woocommerce_taxonomy_archive_description(); 
+		echo flexxi_woocommerce_taxonomy_archive_description();
+		echo '</div></div>';
+	}
 ?>
 <?php
 
