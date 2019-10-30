@@ -149,7 +149,7 @@ body {
   margin-top: 70px;
 }
 
-.bg-animation:hover {
+.product-category img:hover {
   border: 6px solid transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#97dffc), color-stop(50%, #00bea3), to(#97dffc));
   background-image: linear-gradient(white, white), linear-gradient(180deg, #97dffc, #00bea3 50%, #97dffc);
