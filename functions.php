@@ -39,3 +39,14 @@ function register_custom_plugin_styles() {
     wp_register_style( 'typekit', 'https://use.typekit.net/xsu6cgz.css' );
     wp_enqueue_style( 'typekit' );
 }
+
+/* Display WooCommerce product category description on all category archive pages */
+function flexxi_woocommerce_taxonomy_archive_description() {
+    if ( is_tax( array( 'product_cat', 'product_tag' ) ) && get_query_var( 'paged' ) != 0 ) {
+        $description = wc_format_content( term_description() );
+        if ( $description ) {
+            echo '<div class="term-description">' . $description . '</div>';
+        }
+    }
+}
+add_action( 'woocommerce_archive_description', 'flexxi_woocommerce_taxonomy_archive_description');
