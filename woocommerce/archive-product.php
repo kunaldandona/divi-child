@@ -18,7 +18,7 @@ $pageTitle = woocommerce_page_title();
 $description = woocommerce_taxonomy_archive_description();
 $descriptionPagination = flexxi_woocommerce_taxonomy_archive_description();
 
-if($description or $descriptionPagination){
+if($description || $descriptionPagination){
 	$footerWidget = '<h1>'.woocommerce_page_title().'</h1>'.woocommerce_taxonomy_archive_description(); flexxi_woocommerce_taxonomy_archive_description().'';
 }
 
@@ -74,13 +74,12 @@ do_action( 'woocommerce_after_main_content' );
  * @hooked woocommerce_get_sidebar - 10
  */
 ?>
-
-<div class="row-archive">
-	<div class="cat-description">
-	<h1><?php echo woocommerce_page_title() ?></h1>
-	</div>
-</div>
-
+<?php
+echo '<div class="row-archive">';
+echo '<div class="cat-description">';
+echo '<h1>TEST'. woocommerce_page_title() .'</h1>';
+echo '</div></div>';
+?>
 <?php
 
 echo showmodule_shortcode(5566);
