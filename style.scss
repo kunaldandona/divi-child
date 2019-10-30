@@ -152,8 +152,11 @@ body {
 
 .product-category {
     img {
+        border: none;
+        transition: all 0.2s ease-in-out;
+
         &:hover {
-            border: 6px solid transparent;
+            border: 6px solid transparent !important;
             background-image: linear-gradient(white, white), linear-gradient(180deg, #97dffc, #00bea3 50%, #97dffc);
             background-repeat: no-repeat;
             background-size: 100% 100%, 100% 200%;

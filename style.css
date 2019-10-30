@@ -149,8 +149,14 @@ body {
   margin-top: 70px;
 }
 
+.product-category img {
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .product-category img:hover {
-  border: 6px solid transparent;
+  border: 6px solid transparent !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#97dffc), color-stop(50%, #00bea3), to(#97dffc));
   background-image: linear-gradient(white, white), linear-gradient(180deg, #97dffc, #00bea3 50%, #97dffc);
   background-repeat: no-repeat;
