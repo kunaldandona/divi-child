@@ -8,6 +8,10 @@ $post_id = 'product_cat_'.$termID;
 $categorybanner = get_field('background-hero', $post_id);
 $text = get_field("text_category", $post_id);
 
+if($categorybanner){
+	$heroBanner = '<div class="hero-banner"><img src="'. $categorybanner .'" alt="'. woocommerce_page_title() .'" /></div>';
+}
+
 ?>
 
 <div class="archive-page-header">
@@ -18,9 +22,7 @@ $text = get_field("text_category", $post_id);
 	<div class="bottom-divider"></div>
 </div>
 <div class="row-archive">
-	<div class="hero-banner">
-		<img src="<?php echo $categorybanner ?>" alt="<?php woocommerce_page_title(); ?>"/>
-	</div>
+	<?php echo $heroBanner ?>
 
 
 
