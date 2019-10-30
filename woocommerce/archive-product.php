@@ -77,7 +77,7 @@ do_action( 'woocommerce_after_main_content' );
 
 <div class="row-archive">
 	<div class="cat-description">
-	<h1><?php echo $pageTitle ?></h1>
+	<h1><?php echo woocommerce_page_title() ?></h1>
 	</div>
 </div>
 
