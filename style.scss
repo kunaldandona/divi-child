@@ -108,6 +108,7 @@ body {
         margin: 20px 0 0 0;
 
         .product-category {
+
             a {
                 img {
                     max-width: 300px;
@@ -138,9 +139,9 @@ body {
             color: #fff;
             font-size: 16px;
         }
-
-        .nav-up {
-            top: -70px;
-        }
     }
+}
+
+.nav-up {
+    top: -70px;
 }
