@@ -70,6 +70,7 @@ do_action( 'woocommerce_after_main_content' );
 		<h1><?php woocommerce_page_title(); ?></h1>
 		<?php woocommerce_taxonomy_archive_description(); ?>
 		<?php flexxi_woocommerce_taxonomy_archive_description(); ?>
+		Test
 	</div>
 </div>
 <?php
