@@ -14,6 +14,7 @@ if($categorybanner){
 	$heroBanner = '<div class="hero-banner"><img src="'. $categorybanner .'" alt="'. woocommerce_page_title() .'" /></div>';
 }
 
+$pageTitle = woocommerce_page_title();
 $description = woocommerce_taxonomy_archive_description();
 $descriptionPagination = flexxi_woocommerce_taxonomy_archive_description();
 
@@ -76,7 +77,7 @@ do_action( 'woocommerce_after_main_content' );
 
 <div class="row-archive">
 	<div class="cat-description">
-		<?php echo $footerWidget ?>
+	<h1><?php echo $pageTitle ?></h1>
 	</div>
 </div>
 
