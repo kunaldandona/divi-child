@@ -14,7 +14,10 @@ if($categorybanner){
 	$heroBanner = '<div class="hero-banner"><img src="'. $categorybanner .'" /></div>';
 }
 
-$parent = ( isset( $term->parent ) ) ? get_term_by( 'id', $term->parent, 'types' ) : false;
+$children = get_terms( $term->taxonomy, array(
+	'parent'    => $term->term_id,
+	'hide_empty' => false
+	) );
 ?>
 
 <div class="archive-page-header">
@@ -79,12 +82,9 @@ do_action( 'woocommerce_after_main_content' );
 	}
 ?>
 
-<?php if( $parent ): ?>
-    <h2>Archive Parent Term</h2>
-    <h3><?php echo $parent->name; ?></h3>
-<?php else:?>
-    <h2>Archive <?php single_term_title(); ?></h2>
-<?php endif; ?>
+<?php if($children) { 
+    echo 'hey';
+} ?>
 
 
 <?php
