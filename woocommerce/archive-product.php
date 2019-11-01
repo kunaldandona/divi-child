@@ -85,9 +85,9 @@ do_action( 'woocommerce_after_main_content' );
 <?php
 
 	if($children) { 
-		echo showmodule_shortcode(5599);
+		echo do_shortcode('[et_pb_section global_module="5599"][/et_pb_section]');
 	}
 
-	echo showmodule_shortcode(5566);
+	echo do_shortcode('[et_pb_section global_module="5566"][/et_pb_section]');
 	get_footer( 'shop' );
 
