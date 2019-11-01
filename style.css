@@ -185,7 +185,8 @@ body {
 }
 
 .token {
-  background-color: #6e2798;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6e2798), to(#7F00FF));
+  background-image: linear-gradient(180deg, #6e2798, #7F00FF);
   display: inline-block;
   padding: 5px 10px;
   position: absolute;
