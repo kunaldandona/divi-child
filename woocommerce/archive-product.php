@@ -11,7 +11,7 @@ $text = get_field("text_category", $post_id);
 
 $categorybanner = get_field('background-hero', $post_id);
 if($categorybanner){
-	$heroBanner = '<div class="hero-banner"><img src="'. $categorybanner .'" alt="'. woocommerce_page_title() .'" /></div>';
+	$heroBanner = '<div class="hero-banner"><img src="'. $categorybanner .'" /></div>';
 }
 
 ?>
