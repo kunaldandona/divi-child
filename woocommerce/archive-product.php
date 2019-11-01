@@ -82,13 +82,12 @@ do_action( 'woocommerce_after_main_content' );
 	}
 ?>
 
-<?php if($children) { 
-    echo 'hey';
-} ?>
-
-
 <?php
 
-echo showmodule_shortcode(5566);
-get_footer( 'shop' );
+	if($children) { 
+		echo showmodule_shortcode(5599);
+	}
+
+	echo showmodule_shortcode(5566);
+	get_footer( 'shop' );
 
