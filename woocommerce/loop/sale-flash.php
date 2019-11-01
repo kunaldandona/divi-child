@@ -19,17 +19,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 global $post, $product;
 
-$term = get_queried_object();
-$termID = $term->term_id;
-$post_id = 'product_cat_'.$termID;
-
-// Custom Field Text
-$text = get_field("token", $post_id);
-$text1 = get_field("token");
+$token = get_field("token");
 
 ?>
-<span>Test - <?php echo $text ?></span>
-<span>Test1 - <?php echo $text1 ?></span>
+<span class="token">earn <?php echo $token ?> tokens</span>
+
 <?php if ( $product->is_on_sale() ) : ?>
 
 	<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
