@@ -172,10 +172,25 @@ body {
     }
 }
 
-
-
 @keyframes highlight {
     100% {
         background-position: 0 0, 0 0;
+    }
+}
+
+.token {
+    background-color: #6e2798;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    z-index: 1;
+    border-radius: 10px;
+    transform: skew(-20deg);
+
+    .token-text {
+        transform: skew(20deg);
+        color: #fff;
     }
 }

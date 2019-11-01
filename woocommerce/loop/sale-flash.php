@@ -22,7 +22,14 @@ global $post, $product;
 $token = get_field("token");
 
 ?>
-<span class="token">earn <?php echo $token ?> tokens</span>
+
+<?php if ( $token ) : ?>
+
+<div class="token">
+    <div class="token-text">earn <?php echo $token ?> tokens</div>  
+</div>
+
+<?php endif; ?>
 
 <?php if ( $product->is_on_sale() ) : ?>
 
