@@ -68,3 +68,12 @@ add_action( 'woocommerce_archive_description', 'check_woo_description');
 add_filter( 'woocommerce_subcategory_count_html', '__return_false' );
 
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+
+
+add_filter( 'woocommerce_output_related_products_args', 'change_number_related_products', 9999 );
+ 
+function change_number_related_products( $args ) {
+ $args['posts_per_page'] = 4; // # of related products
+ $args['columns'] = 4; // # of columns per row
+ return $args;
+}
