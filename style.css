@@ -204,4 +204,8 @@ body {
           transform: skew(20deg);
   color: #fff;
 }
+
+.summary .token {
+  top: -40px;
+}
 /*# sourceMappingURL=style.css.map */
