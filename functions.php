@@ -66,3 +66,5 @@ add_action( 'woocommerce_archive_description', 'check_woo_description');
  * Hide category product count in product archives
  */
 add_filter( 'woocommerce_subcategory_count_html', '__return_false' );
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
