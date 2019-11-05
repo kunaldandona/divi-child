@@ -227,4 +227,15 @@ body {
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
 }
+
+.ywcps-products {
+  padding-top: 35px;
+}
+
+.ywcps-products .product .et_shop_image img {
+  height: 300px !important;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 /*# sourceMappingURL=style.css.map */

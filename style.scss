@@ -218,3 +218,15 @@ body {
         transform: skew(20deg);
     }
 }
+
+.ywcps-products {
+    padding-top: 35px;
+
+    .product {
+        .et_shop_image img {
+            height: 300px !important;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
