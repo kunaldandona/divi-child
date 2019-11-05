@@ -233,8 +233,11 @@ body {
             background-color: #fdb833;
         }
 
-        .woocommerce-loop-product__title,
-        .price {
+        .amount {
+            color: #fff !important;
+        }
+
+        .woocommerce-loop-product__title {
             font-style: italic;
             font-size: 14px !important;
             color: #fff !important;

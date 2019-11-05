@@ -245,8 +245,11 @@ body {
   background-color: #fdb833;
 }
 
-.ywcps-products .product .woocommerce-loop-product__title,
-.ywcps-products .product .price {
+.ywcps-products .product .amount {
+  color: #fff !important;
+}
+
+.ywcps-products .product .woocommerce-loop-product__title {
   font-style: italic;
   font-size: 14px !important;
   color: #fff !important;
