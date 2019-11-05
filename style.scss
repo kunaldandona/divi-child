@@ -223,6 +223,21 @@ body {
     padding-top: 35px !important;
 
     .product {
+        background-color: #edac30;
+        border-radius: 20px;
+        padding-bottom: 25px;
+        text-align: center;
+
+        .woocommerce-loop-product__title,
+        .price {
+            font-style: italic;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+
         .et_shop_image img {
             height: 300px !important;
             width: 100%;
