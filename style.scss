@@ -223,15 +223,20 @@ body {
     padding-top: 35px !important;
 
     .product {
-        background-color: #edac30;
+        background-color: #6e2798;
         border-radius: 20px;
-        padding-bottom: 25px;
+        padding-bottom: 25px !important;
         text-align: center;
+        transition: 1s all ease-in-out;
+
+        &:hover {
+            background-color: #fdb833;
+        }
 
         .woocommerce-loop-product__title,
         .price {
             font-style: italic;
-            font-size: 20px;
+            font-size: 20px !important;
             color: #fff;
             font-weight: 700;
             letter-spacing: 1px;
