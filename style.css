@@ -246,5 +246,12 @@ body {
   right: 0;
   background: #6e2798;
   left: unset;
+  top: unset;
+  border: none;
+}
+
+.ywcps-products .product .et_overlay:before {
+  color: #fff;
+  top: 50%;
 }
 /*# sourceMappingURL=style.css.map */

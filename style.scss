@@ -234,8 +234,15 @@ body {
             height: 15%;
             bottom: 20px;
             right: 0;
-            background: rgb(110, 39, 152);
+            background: #6e2798;
             left: unset;
+            top: unset;
+            border: none;
+
+            &:before {
+                color: #fff;
+                top: 50%;
+            }
         }
     }
 }
