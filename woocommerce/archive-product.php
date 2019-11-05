@@ -1,8 +1,6 @@
-<?php
+<?php 
 defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
-
-
 
 $term = get_queried_object();
 $termID = $term->term_id;
@@ -20,6 +18,7 @@ $children = get_terms( $term->taxonomy, array(
 	'parent'    => $term->term_id,
 	'hide_empty' => false
 	));
+	do_action( 'woocommerce_before_main_content' );
 ?>
 
 <div class="archive-page-header">
@@ -29,15 +28,10 @@ $children = get_terms( $term->taxonomy, array(
     </div>
 	<div class="bottom-divider"></div>
 </div>
+<div class="row-archive">
+<?php echo $heroBanner ?>
 <?php
 if ( woocommerce_product_loop() ) {
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked woocommerce_output_all_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
 	do_action( 'woocommerce_before_shop_loop' );
 	woocommerce_product_loop_start();
 	if ( wc_get_loop_prop( 'total' ) ) {
@@ -76,4 +70,24 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-get_footer( 'shop' );
+?>
+<?php
+	//Custom logic condition to check if description exist of category, then display block.
+	if(check_woo_description()){
+		echo '<div class="row-archive"><div class="cat-description"><h1>';
+		echo woocommerce_page_title();
+		echo '</h1>';
+		echo woocommerce_taxonomy_archive_description(); 
+		echo flexxi_woocommerce_taxonomy_archive_description();
+		echo '</div></div>';
+	}
+?>
+<?php
+
+	if($children) { 
+		echo do_shortcode('[et_pb_section global_module="5599"][/et_pb_section]');
+	}
+
+	echo do_shortcode('[et_pb_section global_module="5566"][/et_pb_section]');
+	get_footer( 'shop' );
+
