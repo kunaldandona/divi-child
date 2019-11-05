@@ -2,6 +2,8 @@
 defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
+
+
 $term = get_queried_object();
 $termID = $term->term_id;
 $post_id = 'product_cat_'.$termID;
@@ -18,23 +20,15 @@ $children = get_terms( $term->taxonomy, array(
 	'parent'    => $term->term_id,
 	'hide_empty' => false
 	));
-	
 ?>
-<header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
 
-	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
-</header>
+<div class="archive-page-header">
+    <div class="row">
+        <?php woocommerce_category_image(); ?>
+        <h1><?php woocommerce_page_title(); ?></h1>
+    </div>
+	<div class="bottom-divider"></div>
+</div>
 <?php
 if ( woocommerce_product_loop() ) {
 	/**
