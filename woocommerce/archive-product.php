@@ -1,7 +1,7 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
-do_action( 'woocommerce_before_main_content' );
+
 
 
 $term = get_queried_object();
