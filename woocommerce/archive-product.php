@@ -17,18 +17,10 @@ if($categorybanner){
 $children = get_terms( $term->taxonomy, array(
 	'parent'    => $term->term_id,
 	'hide_empty' => false
-	) );
+	));
 ?>
 
-<div class="archive-page-header">
-    <div class="row">
-        <?php woocommerce_category_image(); ?>
-        <h1><?php woocommerce_page_title(); ?></h1>
-    </div>
-	<div class="bottom-divider"></div>
-</div>
-<div class="row-archive">
-<?php echo $heroBanner ?>
+
 <?php
 if ( woocommerce_product_loop() ) {
 	do_action( 'woocommerce_before_shop_loop' );
