@@ -238,4 +238,13 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+.ywcps-products .product .et-overlay {
+  width: 15%;
+  height: 15%;
+  bottom: 20px;
+  right: 0;
+  background: #6e2798;
+  left: unset;
+}
 /*# sourceMappingURL=style.css.map */
