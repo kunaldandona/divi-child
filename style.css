@@ -229,7 +229,7 @@ body {
 }
 
 .ywcps-products {
-  padding-top: 35px;
+  padding-top: 35px !important;
 }
 
 .ywcps-products .product .et_shop_image img {
