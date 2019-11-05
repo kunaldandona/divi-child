@@ -79,12 +79,16 @@ do_action( 'woocommerce_after_main_content' );
 		echo woocommerce_taxonomy_archive_description(); 
 		echo flexxi_woocommerce_taxonomy_archive_description();
 		echo '</div></div>';
+	} else {
+		echo 'hey';
 	}
 ?>
 
 <?php
 
-
+	if($children) { 
+		echo do_shortcode('[et_pb_section global_module="5599"][/et_pb_section]');
+	}
 
 	echo do_shortcode('[et_pb_section global_module="5566"][/et_pb_section]');
 	get_footer( 'shop' );
