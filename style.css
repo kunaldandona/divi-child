@@ -291,6 +291,6 @@ body {
 .archive .container {
   max-width: 100%;
   width: 100%;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 /*# sourceMappingURL=style.css.map */
