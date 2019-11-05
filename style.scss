@@ -272,3 +272,16 @@ body {
         }
     }
 }
+
+.archive {
+    .woocommerce-breadcrumb {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+}

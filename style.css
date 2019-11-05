@@ -283,4 +283,13 @@ body {
   color: #fff;
   top: 50%;
 }
+
+.archive .woocommerce-breadcrumb {
+  display: none;
+}
+
+.archive .container {
+  max-width: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
