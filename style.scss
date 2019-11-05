@@ -201,3 +201,22 @@ body {
         top: -40px;
     }
 }
+
+.trending-deals {
+    .deal-title {
+        display: inline;
+        background-color: #6e2798;
+        padding: 25px 25px 25px 50px;
+        font-size: 22px;
+        line-height: 0;
+        position: absolute;
+        left: -15px;
+        color: white;
+        border-radius: 10px;
+        transform: skew(-20deg);
+
+        div {
+            transform: skew(20deg);
+        }
+    }
+}
