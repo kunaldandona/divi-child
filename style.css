@@ -237,8 +237,8 @@ body {
   border-radius: 20px;
   padding-bottom: 25px !important;
   text-align: center;
-  -webkit-transition: 1s all ease-in-out;
-  transition: 1s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .ywcps-products .product:hover {
@@ -248,11 +248,14 @@ body {
 .ywcps-products .product .woocommerce-loop-product__title,
 .ywcps-products .product .price {
   font-style: italic;
-  font-size: 20px !important;
-  color: #fff;
+  font-size: 14px !important;
+  color: #fff !important;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ywcps-products .product .et_shop_image img {

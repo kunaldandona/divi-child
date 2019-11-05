@@ -227,7 +227,7 @@ body {
         border-radius: 20px;
         padding-bottom: 25px !important;
         text-align: center;
-        transition: 1s all ease-in-out;
+        transition: 0.2s all ease-in-out;
 
         &:hover {
             background-color: #fdb833;
@@ -236,11 +236,14 @@ body {
         .woocommerce-loop-product__title,
         .price {
             font-style: italic;
-            font-size: 20px !important;
-            color: #fff;
+            font-size: 14px !important;
+            color: #fff !important;
             font-weight: 700;
             letter-spacing: 1px;
             line-height: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .et_shop_image img {
