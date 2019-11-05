@@ -81,7 +81,7 @@ do_action( 'woocommerce_after_main_content' );
 		echo '</div></div>';
 	}
 ?>
-
+</div>
 <?php
 
 	if($children) { 
