@@ -70,9 +70,23 @@ do_action( 'woocommerce_after_main_content' );
  * @hooked woocommerce_get_sidebar - 10
  */
 ?>
-
+<?php
+	//Custom logic condition to check if description exist of category, then display block.
+	if(check_woo_description()){
+		echo '<div class="row-archive"><div class="cat-description"><h1>';
+		echo woocommerce_page_title();
+		echo '</h1>';
+		echo woocommerce_taxonomy_archive_description(); 
+		echo flexxi_woocommerce_taxonomy_archive_description();
+		echo '</div></div>';
+	}
+?>
 <?php
 
+	if($children) { 
+		echo do_shortcode('[et_pb_section global_module="5599"][/et_pb_section]');
+	}
 
+	echo do_shortcode('[et_pb_section global_module="5566"][/et_pb_section]');
 	get_footer( 'shop' );
 
