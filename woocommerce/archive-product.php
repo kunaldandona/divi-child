@@ -72,15 +72,13 @@ do_action( 'woocommerce_after_main_content' );
 ?>
 <?php
 	//Custom logic condition to check if description exist of category, then display block.
-	if(check_woo_description() === true){
+	if(check_woo_description()){
 		echo '<div class="row-archive"><div class="cat-description"><h1>';
 		echo woocommerce_page_title();
 		echo '</h1>';
 		echo woocommerce_taxonomy_archive_description(); 
 		echo flexxi_woocommerce_taxonomy_archive_description();
 		echo '</div></div>';
-	} else {
-		echo 'hey';
 	}
 ?>
 
