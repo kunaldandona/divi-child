@@ -11,6 +11,11 @@
 ------------------------------------------------------- */
 body {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
+  padding-top: 70px;
+}
+
+.home body {
+  padding-top: 0px;
 }
 
 .bottom-divider {
