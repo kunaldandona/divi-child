@@ -349,6 +349,17 @@ body {
   padding: 20px 30px;
 }
 
+.single .product .where-to-buy .cover-where {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+}
+
 .single .product .where-to-buy h3 {
   text-transform: uppercase;
   letter-spacing: 1px;

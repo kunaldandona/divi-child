@@ -342,6 +342,16 @@ body {
         .where-to-buy {
             padding: 20px 30px;
 
+            .cover-where {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin: 20px;
+
+                object-fit: cover;
+                object-position: center right;
+            }
+
             h3 {
                 text-transform: uppercase;
                 letter-spacing: 1px;
