@@ -363,6 +363,21 @@ body {
             }
         }
 
+        .woocommerce {
+            .tabs {
+                background: none;
+
+                &:before {
+                    border-bottom-color: none;
+                }
+            }
+
+            .description_tab {
+                background: none;
+                border: none;
+            }
+        }
+
     }
 
 }
