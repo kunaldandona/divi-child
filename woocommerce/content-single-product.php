@@ -43,31 +43,37 @@ $token = get_field("token");
 	?>
 
 	<div class="summary entry-summary">
-        <?php if ( $token ) : ?>
+		<div class="summary-inner">
+			<?php if ( $token ) : ?>
 
-            <div class="token">
-                <div class="token-text">earn <?php echo $token ?> tokens</div>  
-            </div>
+				<div class="token">
+					<div class="token-text">earn <?php echo $token ?> tokens</div>  
+				</div>
 
-        <?php endif; ?>
+			<?php endif; ?>
 
-		<?php
-		/**
-		 * Hook: woocommerce_single_product_summary.
-		 *
-		 * @hooked woocommerce_template_single_title - 5
-		 * @hooked woocommerce_template_single_rating - 10
-		 * @hooked woocommerce_template_single_price - 10
-		 * @hooked woocommerce_template_single_excerpt - 20
-		 * @hooked woocommerce_template_single_add_to_cart - 30
-		 * @hooked woocommerce_template_single_meta - 40
-		 * @hooked woocommerce_template_single_sharing - 50
-		 * @hooked WC_Structured_Data::generate_product_data() - 60
-         * 
-		 */
-		do_action( 'woocommerce_single_product_summary' );
-		?>
+			<?php
+			/**
+			 * Hook: woocommerce_single_product_summary.
+			 *
+			 * @hooked woocommerce_template_single_title - 5
+			 * @hooked woocommerce_template_single_rating - 10
+			 * @hooked woocommerce_template_single_price - 10
+			 * @hooked woocommerce_template_single_excerpt - 20
+			 * @hooked woocommerce_template_single_add_to_cart - 30
+			 * @hooked woocommerce_template_single_meta - 40
+			 * @hooked woocommerce_template_single_sharing - 50
+			 * @hooked WC_Structured_Data::generate_product_data() - 60
+			 * 
+			 */
+			do_action( 'woocommerce_single_product_summary' );
+			?>
+		</div>
+		<div class="where-to-buy">
+			<h3>Where to buy:</h3>
+		</div>
 	</div>
+
 
 	<?php
 	/**
