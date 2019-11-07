@@ -73,7 +73,7 @@ $token = get_field("token");
 			<h3>Where to buy</h3>
 			<div class="gallery-where">
 				<img src="https://t4.rbxcdn.com/65c486b6a5c214f1ab48ad8adb0a27c0" class="cover-where" alt="">
-				<img src="http://vteamlabs.com/wp-content/uploads/2018/10/Amazon-logo.png" class="cover-where" alt="">
+				<img src="https://flexxi.app/wp-content/uploads/2019/11/Amazon-logo.png" class="cover-where" alt="">
 				<img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01105908/1271.png" class="cover-where" alt="">
 			</div>
 		</div>
