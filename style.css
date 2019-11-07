@@ -199,9 +199,7 @@ body {
   background-image: linear-gradient(180deg, #6e2798, #7F00FF);
   display: inline-block;
   padding: 5px 10px;
-  position: absolute;
-  right: 0;
-  top: -10px;
+  margin-bottom: 10px;
   z-index: 1;
   border-radius: 10px;
   -webkit-transform: skew(-20deg);
@@ -324,7 +322,7 @@ body {
 }
 
 .single .product .price {
-  color: #000;
+  color: #000 !important;
   margin: 0 0 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
