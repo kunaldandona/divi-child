@@ -371,15 +371,15 @@ body {
 
 .woocommerce-tabs {
     .tabs {
-        background: none;
+        background: none !important;
 
         &:before {
-            border-bottom-color: none;
+            border-bottom-color: none !important;
         }
     }
 
     .description_tab {
-        background: none;
-        border: none;
+        background: none !important;
+        border: none !important;
     }
 }

@@ -372,15 +372,15 @@ body {
 }
 
 .woocommerce-tabs .tabs {
-  background: none;
+  background: none !important;
 }
 
 .woocommerce-tabs .tabs:before {
-  border-bottom-color: none;
+  border-bottom-color: none !important;
 }
 
 .woocommerce-tabs .description_tab {
-  background: none;
-  border: none;
+  background: none !important;
+  border: none !important;
 }
 /*# sourceMappingURL=style.css.map */
