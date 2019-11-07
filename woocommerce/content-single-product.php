@@ -70,7 +70,7 @@ $token = get_field("token");
 			?>
 		</div>
 		<div class="where-to-buy">
-			<h3>Where to buy:</h3>
+			<h3>Where to buy</h3>
 		</div>
 	</div>
 
