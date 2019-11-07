@@ -93,6 +93,4 @@ $token = get_field("token");
 </div>
 
 <?php 
-echo do_shortcode('[et_pb_section global_module="5566"][/et_pb_section]');
-
 do_action( 'woocommerce_after_single_product' ); ?>
