@@ -412,4 +412,8 @@ body {
   min-height: 50px;
   text-transform: capitalize;
 }
+
+.single .container {
+  padding-top: 30px;
+}
 /*# sourceMappingURL=style.css.map */
