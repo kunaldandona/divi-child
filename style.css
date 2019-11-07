@@ -302,4 +302,13 @@ body {
   width: 100%;
   padding-top: 0 !important;
 }
+
+.single .woocommerce-breadcrumb {
+  border-bottom: 0.5px solid grey;
+  text-transform: uppercase;
+}
+
+.single .product {
+  margin-top: 25px;
+}
 /*# sourceMappingURL=style.css.map */
