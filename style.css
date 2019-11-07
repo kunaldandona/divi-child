@@ -372,11 +372,7 @@ body {
 }
 
 .woocommerce-tabs .tabs {
-  background: none !important;
-}
-
-.woocommerce-tabs .tabs:before {
-  border-bottom-color: #ffffff00 !important;
+  display: none;
 }
 
 .woocommerce-tabs .description_tab {
