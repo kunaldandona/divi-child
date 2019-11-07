@@ -414,6 +414,6 @@ body {
 }
 
 .single .container {
-  padding-top: 30px;
+  padding-top: 30px !important;
 }
 /*# sourceMappingURL=style.css.map */
