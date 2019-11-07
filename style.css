@@ -345,6 +345,10 @@ body {
   display: block;
 }
 
+.single .product .where-to-buy {
+  padding: 20px 30px;
+}
+
 .single .product .where-to-buy h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
