@@ -405,4 +405,9 @@ body {
   margin-bottom: 30px;
   border-bottom: 1px solid;
 }
+
+.single .related .woocommerce-loop-product__title {
+  font-size: 16px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
