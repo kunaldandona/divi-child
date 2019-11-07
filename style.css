@@ -376,7 +376,7 @@ body {
 }
 
 .woocommerce-tabs .tabs:before {
-  border-bottom-color: none !important;
+  border-bottom-color: #ffffff00 !important;
 }
 
 .woocommerce-tabs .description_tab {
