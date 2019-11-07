@@ -304,7 +304,6 @@ body {
 .single .woocommerce-breadcrumb {
   border-bottom: 0.5px solid grey;
   text-transform: uppercase;
-  padding-bottom: 10px;
 }
 
 .single .summary-inner {
