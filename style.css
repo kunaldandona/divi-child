@@ -350,14 +350,14 @@ body {
 }
 
 .single .product .where-to-buy .cover-where {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center right;
-     object-position: center right;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .single .product .where-to-buy h3 {
