@@ -395,7 +395,7 @@ body {
   padding: 20px;
 }
 
-.single .related h2 {
+.single .related .title-related {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
