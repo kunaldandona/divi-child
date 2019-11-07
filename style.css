@@ -376,7 +376,7 @@ body {
   border: none !important;
 }
 
-.woocommerce-tabs .tab-description h2 {
+.woocommerce-tabs #tab-description h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
