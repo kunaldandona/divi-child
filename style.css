@@ -423,4 +423,15 @@ body {
 .onsale {
   display: none;
 }
+
+.woocommerce-Price-amount {
+  background: #fdb833;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.woocommerce-Price-amount:hover {
+  background: #622388;
+}
 /*# sourceMappingURL=style.css.map */
