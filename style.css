@@ -251,7 +251,7 @@ body {
   background-color: #fdb833;
 }
 
-.ywcps-products .product:hover .page .woocommerce-Price-amount {
+.ywcps-products .product:hover .woocommerce-Price-amount {
   background: #622388;
 }
 
