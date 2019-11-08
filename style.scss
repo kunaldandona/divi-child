@@ -242,8 +242,10 @@ body {
         &:hover {
             background-color: #fdb833;
 
-            .woocommerce-Price-amount {
-                background: #622388;
+            .page {
+                .woocommerce-Price-amount {
+                    background: #622388;
+                }
             }
         }
 
@@ -429,15 +431,15 @@ body {
         top: -10px;
 
     }
+
+    .woocommerce-Price-amount {
+        background: #fdb833;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
 }
 
 .onsale {
     display: none;
-}
-
-.woocommerce-Price-amount {
-    background: #fdb833;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 15px;
 }

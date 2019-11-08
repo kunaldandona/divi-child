@@ -251,7 +251,7 @@ body {
   background-color: #fdb833;
 }
 
-.ywcps-products .product:hover .woocommerce-Price-amount {
+.ywcps-products .product:hover .page .woocommerce-Price-amount {
   background: #622388;
 }
 
@@ -424,14 +424,14 @@ body {
   top: -10px;
 }
 
-.onsale {
-  display: none;
-}
-
-.woocommerce-Price-amount {
+.page .woocommerce-Price-amount {
   background: #fdb833;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 15px;
+}
+
+.onsale {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
