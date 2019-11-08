@@ -237,7 +237,6 @@ body {
         background-color: #6e2798;
         border-radius: 20px;
         padding-bottom: 25px !important;
-        text-align: center;
         transition: 0.2s all ease-in-out;
 
         &:hover {
@@ -249,15 +248,12 @@ body {
         }
 
         .woocommerce-loop-product__title {
-            font-style: italic;
             font-size: 14px !important;
             color: #fff !important;
-            font-weight: 700;
+            font-weight: 500;
             letter-spacing: 1px;
-            line-height: 1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            line-height: 1.25;
+            min-height: 65px;
         }
 
         .et_shop_image img {
@@ -420,4 +416,12 @@ body {
         padding-top: 30px !important;
     }
 
+}
+
+.page {
+    .token {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
 }

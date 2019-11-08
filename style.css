@@ -243,7 +243,6 @@ body {
   background-color: #6e2798;
   border-radius: 20px;
   padding-bottom: 25px !important;
-  text-align: center;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
@@ -257,15 +256,12 @@ body {
 }
 
 .ywcps-products .product .woocommerce-loop-product__title {
-  font-style: italic;
   font-size: 14px !important;
   color: #fff !important;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
-  line-height: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.25;
+  min-height: 65px;
 }
 
 .ywcps-products .product .et_shop_image img {
@@ -416,5 +412,11 @@ body {
 
 .single .container {
   padding-top: 30px !important;
+}
+
+.page .token {
+  position: absolute;
+  right: -10px;
+  top: -10px;
 }
 /*# sourceMappingURL=style.css.map */
