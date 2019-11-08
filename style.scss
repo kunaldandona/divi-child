@@ -241,6 +241,10 @@ body {
 
         &:hover {
             background-color: #fdb833;
+
+            .woocommerce-Price-amount {
+                background: #622388;
+            }
         }
 
         .amount {
@@ -436,8 +440,4 @@ body {
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 15px;
-
-    &:hover {
-        background: #622388;
-    }
 }
