@@ -442,7 +442,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 980px) {
     .et_pb_menu_inner_container {
         margin-top: -15px;
     }
