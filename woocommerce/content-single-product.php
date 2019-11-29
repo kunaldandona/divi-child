@@ -27,7 +27,7 @@ if ( post_password_required() ) {
 	return;
 }
 
-$token = $product->get_price();
+$token = ($product->get_price() * 8)/100;
 
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
