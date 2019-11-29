@@ -183,6 +183,12 @@ body {
     }
 }
 
+.participating-brands {
+    img {
+        border: 6px solid #622388;
+    }
+}
+
 @keyframes highlight {
     100% {
         background-position: 0 0, 0 0;

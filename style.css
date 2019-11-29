@@ -183,6 +183,10 @@ body {
           animation: highlight 1s infinite alternate;
 }
 
+.participating-brands img {
+  border: 6px solid #622388;
+}
+
 @-webkit-keyframes highlight {
   100% {
     background-position: 0 0, 0 0;
