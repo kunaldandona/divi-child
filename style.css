@@ -163,13 +163,15 @@ body {
   margin-top: 70px;
 }
 
-.product-category img {
+.product-category img,
+.participating-brands img {
   border: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.product-category img:hover {
+.product-category img:hover,
+.participating-brands img:hover {
   border: 6px solid transparent !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#036dce), color-stop(50%, #622388), to(#97dffc));
   background-image: linear-gradient(white, white), linear-gradient(180deg, #036dce, #622388 50%, #97dffc);
