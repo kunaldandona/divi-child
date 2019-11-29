@@ -27,7 +27,7 @@ if ( post_password_required() ) {
 	return;
 }
 
-$token = get_field("token");
+$token = $product->get_price();
 
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
@@ -47,7 +47,7 @@ $token = get_field("token");
 			<?php if ( $token ) : ?>
 
 				<div class="token">
-					<div class="token-text">earn <?php echo $token ?> tokens</div>  
+					<div class="token-text">earn <?php echo $token ?> cashback</div>  
 				</div>
 
 			<?php endif; ?>
