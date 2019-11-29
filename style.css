@@ -181,7 +181,6 @@ body {
   background-origin: padding-box, border-box;
   -webkit-animation: highlight 1s infinite alternate;
           animation: highlight 1s infinite alternate;
-  padding: 10px;
 }
 
 @-webkit-keyframes highlight {
