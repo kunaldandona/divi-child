@@ -19,14 +19,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 global $post, $product;
 
-$token = get_field("token");
+$token = ($product->get_price() * 8)/100;
+$cashback = number_format((float)$token, 2, '.', '');
 
 ?>
 
 <?php if ( $token ) : ?>
 
 <div class="token">
-    <div class="token-text">earn <?php echo $token ?> tokens</div>  
+    <div class="token-text">earn $<?php echo $cashback ?> cashback</div>  
 </div>
 
 <?php endif; ?>
