@@ -28,6 +28,7 @@ if ( post_password_required() ) {
 }
 
 $token = ($product->get_price() * 8)/100;
+$cashback = number_format((float)$token, 2, '.', '');
 
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
@@ -47,7 +48,7 @@ $token = ($product->get_price() * 8)/100;
 			<?php if ( $token ) : ?>
 
 				<div class="token">
-					<div class="token-text">earn <?php echo $token ?> cashback</div>  
+					<div class="token-text">earn <?php echo $cashback ?> cashback</div>  
 				</div>
 
 			<?php endif; ?>
