@@ -453,3 +453,21 @@ body {
         margin-top: -15px;
     }
 }
+
+.woocommerce .ywcps-wrapper .ywcps-nav-next #default_next {
+    right: -30px;
+    width: 40px;
+    height: 40px;
+    background: #6e2798 url(../images/dx.png) no-repeat;
+    background-position: center center;
+    border-radius: 25px;
+}
+
+.woocommerce .ywcps-wrapper .ywcps-nav-prev #default_prev {
+    left: -30px;
+    width: 40px;
+    height: 40px;
+    background: #6e2798 url(../images/sx.png) no-repeat;
+    background-position: center center;
+    border-radius: 25px;
+}
