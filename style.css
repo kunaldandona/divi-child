@@ -45,7 +45,10 @@ body {
 .archive-page-header img {
   max-width: 100px;
   height: auto;
-  padding: 20px 0;
+  margin: 20px 0;
+  border: 6px solid #6e2799;
+  -webkit-box-shadow: 0px 0px 20px #0000007a;
+          box-shadow: 0px 0px 20px #0000007a;
 }
 
 .archive-page-header .row {
