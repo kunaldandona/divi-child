@@ -253,6 +253,18 @@ li.product {
   transition: 0.2s all ease-in-out;
 }
 
+li.product .token {
+  position: absolute !important;
+  right: -10px;
+  top: -10px;
+}
+
+li.product .woocommerce-Price-amount {
+  background: #fdb833;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
 li.product .amount {
   color: #fff !important;
 }
