@@ -247,6 +247,14 @@ body {
   padding-top: 35px !important;
 }
 
+.single-product .woocommerce-product-gallery__wrapper img {
+  max-height: 550px;
+  padding: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 6px solid #6e2798;
+}
+
 li.product {
   padding-bottom: 25px !important;
   -webkit-transition: 0.2s all ease-in-out;
