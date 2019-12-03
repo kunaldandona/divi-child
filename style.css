@@ -265,6 +265,7 @@ body {
   line-height: 1.3em;
   height: 3em;
   overflow: hidden !important;
+  margin-bottom: 20px;
 }
 
 .ywcps-products .product .et_shop_image img {
@@ -431,7 +432,6 @@ body {
 .page .woocommerce-Price-amount {
   background: #fdb833;
   padding: 10px 20px;
-  border-radius: 20px;
   font-size: 15px;
 }
 
