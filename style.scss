@@ -240,56 +240,57 @@ body {
 
 .ywcps-products {
     padding-top: 35px !important;
+}
 
-    .product {
+li.product {
 
-        padding-bottom: 25px !important;
-        transition: 0.2s all ease-in-out;
+    padding-bottom: 25px !important;
+    transition: 0.2s all ease-in-out;
 
 
 
-        .amount {
-            color: #fff !important;
-        }
+    .amount {
+        color: #fff !important;
+    }
 
-        .woocommerce-loop-product__title {
-            font-size: 14px !important;
-            color: #000 !important;
-            font-weight: 500;
-            letter-spacing: 1px;
-            line-height: 1.3em;
-            height: 3em;
-            overflow: hidden !important;
-            margin-bottom: 20px;
-        }
+    .woocommerce-loop-product__title {
+        font-size: 14px !important;
+        color: #000 !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.3em;
+        height: 3em;
+        overflow: hidden !important;
+        margin-bottom: 20px;
+    }
 
-        .et_shop_image img {
-            height: 300px !important;
-            width: 100%;
-            object-fit: contain;
-            padding: 20px 10px;
-            border: 6px solid #6d2798;
-            background: #fff;
-            box-shadow: 0px 2px 6px #000 !important;
-        }
+    .et_shop_image img {
+        height: 300px !important;
+        width: 100%;
+        object-fit: contain;
+        padding: 20px 10px;
+        border: 6px solid #6d2798;
+        background: #fff;
+        box-shadow: 0px 2px 6px #000 !important;
+    }
 
-        .et_overlay {
-            width: 15%;
-            height: 15%;
-            bottom: 20px;
-            right: 0;
-            background: #6e2798;
-            left: unset;
-            top: unset;
-            border: none;
+    .et_overlay {
+        width: 15%;
+        height: 15%;
+        bottom: 20px;
+        right: 0;
+        background: #6e2798;
+        left: unset;
+        top: unset;
+        border: none;
 
-            &:before {
-                color: #fff;
-                top: 50%;
-            }
+        &:before {
+            color: #fff;
+            top: 50%;
         }
     }
 }
+
 
 .archive {
     .woocommerce-breadcrumb {
