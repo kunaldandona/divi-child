@@ -259,11 +259,12 @@ body {
 
 .ywcps-products .product .woocommerce-loop-product__title {
   font-size: 14px !important;
-  color: #fff !important;
+  color: #000 !important;
   font-weight: 500;
   letter-spacing: 1px;
-  line-height: 1.25;
-  min-height: 65px;
+  line-height: 1.3em;
+  height: 3em;
+  overflow: hidden !important;
 }
 
 .ywcps-products .product .et_shop_image img {
