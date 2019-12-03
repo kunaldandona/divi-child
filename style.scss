@@ -294,6 +294,16 @@ li.product {
         border: 6px solid #6d2798;
         background: #fff;
         box-shadow: 0px 2px 6px #000 !important;
+
+        &:hover {
+            border: 6px solid transparent !important;
+            background-image: linear-gradient(white, white), linear-gradient(180deg, #036dce, #622388 50%, #97dffc);
+            background-repeat: no-repeat;
+            background-size: 100% 100%, 100% 200%;
+            background-position: 0 0, 0 100%;
+            background-origin: padding-box, border-box;
+            animation: highlight 1s infinite alternate;
+        }
     }
 
     .et_overlay {
