@@ -242,18 +242,11 @@ body {
     padding-top: 35px !important;
 
     .product {
-        background-color: #6e2798;
-        border-radius: 20px;
+
         padding-bottom: 25px !important;
         transition: 0.2s all ease-in-out;
 
-        &:hover {
-            background-color: #fdb833;
 
-            .woocommerce-Price-amount {
-                background: #622388;
-            }
-        }
 
         .amount {
             color: #fff !important;
@@ -272,6 +265,10 @@ body {
             height: 300px !important;
             width: 100%;
             object-fit: contain;
+            padding: 20px 10px;
+            border: 6px solid #6d2798;
+            background: #fff;
+            box-shadow: 0px 2px 6px #000 !important;
         }
 
         .et_overlay {

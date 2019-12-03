@@ -248,19 +248,9 @@ body {
 }
 
 .ywcps-products .product {
-  background-color: #6e2798;
-  border-radius: 20px;
   padding-bottom: 25px !important;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
-}
-
-.ywcps-products .product:hover {
-  background-color: #fdb833;
-}
-
-.ywcps-products .product:hover .woocommerce-Price-amount {
-  background: #622388;
 }
 
 .ywcps-products .product .amount {
@@ -281,6 +271,11 @@ body {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  padding: 20px 10px;
+  border: 6px solid #6d2798;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 6px #000 !important;
+          box-shadow: 0px 2px 6px #000 !important;
 }
 
 .ywcps-products .product .et_overlay {
