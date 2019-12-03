@@ -263,7 +263,7 @@ li.product {
 
 li.product .token {
   position: absolute !important;
-  right: -10px;
+  right: 0px;
   top: -10px;
 }
 
@@ -457,7 +457,7 @@ li.product .et_overlay:before {
 
 .page .token {
   position: absolute !important;
-  right: -10px;
+  right: 0px;
   top: -10px;
 }
 
