@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 ?>
 <div style="display: flex; align-items: center;">
-<p style="flex: 0 0 25%;"class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) );?>"><?php echo $product->get_price_html(); ?></p>
+<p style="flex: 0 0 20%; margin: 0;"class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) );?>"><?php echo $product->get_price_html(); ?></p>
 <div style="flex: 0 0 100%;">
     <?php
 echo do_shortcode('[et_pb_row global_module="6038"][/et_pb_row]'); ?>
