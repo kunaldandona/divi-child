@@ -48,7 +48,7 @@ $cashback = number_format((float)$token, 2, '.', '');
 			<?php if ( $token ) : ?>
 
 				<div class="token">
-					<div class="token-text">upload receipt & earn $<?php echo $cashback ?> cashback</div>  
+					<div class="token-text">upload receipt and earn $<?php echo $cashback ?> cashback</div>  
 				</div>
 
 			<?php endif; ?>
