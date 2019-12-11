@@ -1,9 +1,9 @@
 jQuery(document).ready(function ($) {
 
-    $('.et_pb_menu__logo').click((e) => {
-        e.preventDefault();
-        $('#main-flexxi-submenu').toggleClass("display-none", 1000);
-    });
+    // $('.et_pb_menu__logo').click((e) => {
+    //     // e.preventDefault();
+    //     // $('#main-flexxi-submenu').toggleClass("display-none", 1000);
+    // });
 
     let colors = ['#d90368', '#ec368d', '#ee4266', '#820263'];
 
