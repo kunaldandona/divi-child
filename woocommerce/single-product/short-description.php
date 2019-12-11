@@ -26,5 +26,3 @@ if ( ! $short_description ) {
 <div class="woocommerce-product-details__short-description">
 	<?php echo $short_description; // WPCS: XSS ok. ?>
 </div>
-<?php
-echo do_shortcode('[et_pb_row global_module="6038"][/et_pb_row]'); ?>
