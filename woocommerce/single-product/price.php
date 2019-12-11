@@ -19,6 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 global $product;
 ?>
+<div class="no-flex">
 <p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) );?>"><?php echo $product->get_price_html(); ?></p>
 <?php
 echo do_shortcode('[et_pb_row global_module="6038"][/et_pb_row]'); ?>
+</div>
