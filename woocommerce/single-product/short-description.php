@@ -1,8 +1,8 @@
 <?php
 /**
- * Single product short description
+ * Single Product Price
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/single-product/short-description.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/single-product/price.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -12,17 +12,19 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.3.0
+ * @version 3.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit; // Exit if accessed directly
 }
-global $post;
-$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
-if ( ! $short_description ) {
-	return;
-}
+global $product;
 ?>
-<div class="woocommerce-product-details__short-description">
-	<?php echo $short_description; // WPCS: XSS ok. ?>
+<div style="display: flex; align-items: center;">
+<p style="flex: 0 0 25%;"class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) );?>"><?php echo $product->get_price_html(); ?></p>
+<div style="flex: 0 0 100%;">
+    <?php
+echo do_shortcode('[et_pb_row global_module="6038"][/et_pb_row]'); ?>
 </div>
+</div>
+
+
