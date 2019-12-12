@@ -271,6 +271,7 @@ li.product .woocommerce-Price-amount {
   background: #fdb833;
   padding: 10px 20px;
   font-size: 15px;
+  border-radius: 10px;
 }
 
 li.product .amount {
@@ -466,6 +467,7 @@ li.product .et_overlay:before {
   background: #fdb833;
   padding: 10px 20px;
   font-size: 15px;
+  border-radius: 10px;
 }
 
 .onsale {
