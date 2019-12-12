@@ -298,6 +298,7 @@ li.product .et_shop_image img {
   background: #fff;
   -webkit-box-shadow: 0px 2px 6px #000 !important;
           box-shadow: 0px 2px 6px #000 !important;
+  border-radius: 10px;
 }
 
 li.product .et_shop_image img:hover {
